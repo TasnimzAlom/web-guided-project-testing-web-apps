@@ -22,6 +22,10 @@ test("form is filled out and submit adds new animal", () => {
 
   expect(speciesInput).toHaveValue("Tiger");
 
+  // negative assertion
+  const noTigerText = screen.queryByText(/tiger/i);
+  expect(noTigerText).not.toBeNull();
+
   // query for the button
   const button = screen.getByRole("button", { name: /submit/i });
 
