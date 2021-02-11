@@ -9,7 +9,7 @@ test("Header is rendered", () => {
 
   // Act
   // query the DOM for the header element
-  const header = screen.getByText(/Add New Animal/i); // regex reg-ex regular expressions
+  const header = screen.getByText(/add new animal/i); // regex reg-ex regular expressions
 
   // Assert
   // Is the header found on the DOM?
