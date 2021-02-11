@@ -26,5 +26,9 @@ test("form is filled out and submit adds new animal", () => {
   // click button
   userEvent.click(button);
 
+  // query for the text "tiger"
+  const tigerText = screen.queryByText(/tiger/i);
+
   // assert
+  expect(tigerText).not.toBeInTheDocument();
 });
