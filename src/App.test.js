@@ -1,3 +1,9 @@
+import React from "React";
+import { render } from "@testing-library/react";
+import App from "./App";
+
+test("", () => {});
+
 // Testing gives us confidence in our code
 
 /**
