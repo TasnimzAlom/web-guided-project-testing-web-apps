@@ -13,7 +13,17 @@
  *      many different scenarios
  */
 
+// jest - test runner
+//      - used for assertions (global functions)
+//      - uses global functions to structure our tests
+//           - test, describe, it
 test("test name", () => {
   // if the test does not throw an error, the test will pass
-  throw new Error("This test broke because of X, Y, Z"); // we will not throw errors in our tests... that is built into RTL
+  // throw new Error("This test broke because of X, Y, Z"); // we will not throw errors in our tests... that is built into RTL
+});
+
+describe("testing", () => {
+  it("should pass all the tests", () => {
+    console.log("it passed!");
+  });
 });
