@@ -2,7 +2,17 @@ import React from "React";
 import { render } from "@testing-library/react";
 import App from "./App";
 
-test("", () => {});
+test("Header is rendered", () => {
+  // Arrange
+  // Render the App component
+  render(<App />);
+
+  // Act
+  // query the DOM for the header element
+
+  // Assert
+  // Is the header found on the DOM?
+});
 
 // Testing gives us confidence in our code
 
