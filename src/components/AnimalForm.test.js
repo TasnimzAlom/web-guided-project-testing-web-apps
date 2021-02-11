@@ -30,5 +30,5 @@ test("form is filled out and submit adds new animal", () => {
   const tigerText = screen.queryByText(/tiger/i);
 
   // assert
-  expect(tigerText).not.toBeInTheDocument();
+  expect(tigerText).toBeInTheDocument();
 });
