@@ -11,7 +11,7 @@ test("Header is rendered", () => {
   // Act
   // query the DOM for the header element
   console.log(screen);
-  const header = screen.getByRole("header");
+  const header = screen.getByRole("heading");
 
   // Assert
   // Is the header found on the DOM?
