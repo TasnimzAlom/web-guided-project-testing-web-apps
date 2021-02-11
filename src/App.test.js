@@ -6,15 +6,14 @@ test("Header is rendered", () => {
   // Arrange
   // Render the App component
   const { debug } = render(<App />);
-  debug();
 
   // Act
   // query the DOM for the header element
-  console.log(screen);
   const header = screen.getByText("Add New Animal");
-  console.log(header);
+
   // Assert
   // Is the header found on the DOM?
+  expect(header).toBeInTheDocument();
 });
 
 // Testing gives us confidence in our code
