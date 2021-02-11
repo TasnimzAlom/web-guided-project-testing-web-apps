@@ -9,7 +9,7 @@ test("Header is rendered", () => {
 
   // Act
   // query the DOM for the header element
-  const header = screen.getByText("Add New Animals");
+  const header = screen.getByText("Add New Animal");
 
   // Assert
   // Is the header found on the DOM?
