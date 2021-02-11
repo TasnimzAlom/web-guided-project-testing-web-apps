@@ -24,7 +24,7 @@ test("form is filled out and submit adds new animal", () => {
 
   // negative assertion
   const noTigerText = screen.queryByText(/tiger/i);
-  expect(noTigerText).not.toBeNull();
+  expect(noTigerText).toBeNull();
 
   // query for the button
   const button = screen.getByRole("button", { name: /submit/i });
