@@ -17,14 +17,12 @@ const AnimalForm = ({ errors, touched, values }) => {
   };
 
   const handleSubmit = (event) => {
-    if (event) {
-      event.preventDefault();
-      const newAnimal = {
-        ...animal,
-        id: Date.now(),
-      };
-      setAnimals([...animals, newAnimal]);
-    }
+    event.preventDefault();
+    const newAnimal = {
+      ...animal,
+      id: Date.now(),
+    };
+    setAnimals([...animals, newAnimal]);
   };
 
   return (
