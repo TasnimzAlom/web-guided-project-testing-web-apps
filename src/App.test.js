@@ -5,8 +5,8 @@ import App from "./App";
 test("Header is rendered", () => {
   // Arrange
   // Render the App component
-  const container = render(<App />);
-  container.debug();
+  const { debug } = render(<App />);
+  debug();
 
   // Act
   // query the DOM for the header element
