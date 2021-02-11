@@ -11,7 +11,7 @@ test("Header is rendered", () => {
   // Act
   // query the DOM for the header element
   console.log(screen);
-  const header = screen.getByText("heading");
+  const header = screen.getByText("Add New Animal");
 
   // Assert
   // Is the header found on the DOM?
