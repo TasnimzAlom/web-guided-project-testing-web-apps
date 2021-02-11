@@ -20,7 +20,7 @@ test("form is filled out and submit adds new animal", () => {
   userEvent.type(ageInput, "3");
   userEvent.type(notesInput, "docile, kind, fat");
 
-  expect(speciesInput).toHaveTextContent("Tiger");
+  expect(speciesInput).toHaveValue("Tiger");
 
   // query for the button
   const button = screen.getByRole("button", { name: /submit/i });
