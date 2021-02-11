@@ -21,6 +21,7 @@ test("form is filled out and submit adds new animal", () => {
   userEvent.type(notesInput, "docile, kind, fat");
 
   // query for the button
+  screen.getByRole("button", { name: /submit/i });
 
   // click button
 
