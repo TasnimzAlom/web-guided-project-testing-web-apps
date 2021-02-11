@@ -13,4 +13,7 @@
  *      many different scenarios
  */
 
-test("test name", () => {});
+test("test name", () => {
+  // if the test does not throw an error, the test will pass
+  throw new Error();
+});
