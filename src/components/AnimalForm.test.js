@@ -11,6 +11,8 @@ test("form is filled out and submit adds new animal", () => {
   render(<AnimalForm />);
   // query for all inputs
   screen.getByLabelText(/species/i);
+  screen.getByLabelText(/age/i);
+  screen.getByLabelText(/notes/i);
 
   // type into inputs
 
