@@ -10,9 +10,9 @@ test("form is filled out and submit adds new animal", () => {
   // render
   render(<AnimalForm />);
   // query for all inputs
-  screen.getByLabelText(/species/i);
-  screen.getByLabelText(/age/i);
-  screen.getByLabelText(/notes/i);
+  const speciesInput = screen.getByLabelText(/species/i);
+  const ageInput = screen.getByLabelText(/age/i);
+  const notesInput = screen.getByLabelText(/notes/i);
 
   // type into inputs
 
