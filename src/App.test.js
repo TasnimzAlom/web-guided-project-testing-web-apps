@@ -1,11 +1,12 @@
 import React from "React";
-import { render } from "@testing-library/react";
+import { render, debug } from "@testing-library/react";
 import App from "./App";
 
 test("Header is rendered", () => {
   // Arrange
   // Render the App component
   render(<App />);
+  debug();
 
   // Act
   // query the DOM for the header element
