@@ -14,7 +14,6 @@ test("Header is rendered", () => {
   // Assert
   // Is the header found on the DOM?
   expect(header).toBeInTheDocument();
-  expect(2 + 2).toBe(4);
 });
 
 // Testing gives us confidence in our code
