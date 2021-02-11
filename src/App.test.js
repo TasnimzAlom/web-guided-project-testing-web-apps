@@ -1,5 +1,5 @@
 import React from "React";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 test("Header is rendered", () => {
@@ -10,6 +10,7 @@ test("Header is rendered", () => {
 
   // Act
   // query the DOM for the header element
+  console.log(screen);
 
   // Assert
   // Is the header found on the DOM?
