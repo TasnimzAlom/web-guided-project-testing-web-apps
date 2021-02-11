@@ -12,7 +12,7 @@ test("Header is rendered", () => {
   // query the DOM for the header element
   console.log(screen);
   const header = screen.getByText("Add New Animal");
-
+  console.log(header);
   // Assert
   // Is the header found on the DOM?
 });
