@@ -16,6 +16,9 @@ test("form is filled out and submit adds new animal", () => {
   const notesInput = screen.getByLabelText(/notes/i);
 
   // type into inputs
+  userEvent.type(speciesInput, "Tiger");
+  userEvent.type(ageInput, "3");
+  userEvent.type(notesInput, "docile, kind, fat");
 
   // query for the button
 
